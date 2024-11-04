@@ -1,0 +1,45 @@
+﻿<Window x:Class="Mastermind.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mastermind"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ComboBox HorizontalAlignment="Left" Margin="25,26,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Background="Red" Content="Rood"/>
+            <ComboBoxItem Background="Orange" Content="Orange"/>
+            <ComboBoxItem Background="Yellow" Content="Geel"/>
+            <ComboBoxItem Background="Blue" Content="Blauw"/>
+            <ComboBoxItem Background="White" Content="White"/>
+            <ComboBoxItem Background="Green" Content="green"/>
+        </ComboBox>
+        <ComboBox HorizontalAlignment="Left" Margin="150,26,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Background="Red" Content="Rood"/>
+            <ComboBoxItem Background="Orange" Content="Orange"/>
+            <ComboBoxItem Background="Yellow" Content="Geel"/>
+            <ComboBoxItem Background="Blue" Content="Blauw"/>
+            <ComboBoxItem Background="White" Content="White"/>
+            <ComboBoxItem Background="Green" Content="green"/>
+        </ComboBox>
+            <ComboBox HorizontalAlignment="Left" Margin="275,26,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Background="Red" Content="Rood"/>
+            <ComboBoxItem Background="Orange" Content="Orange"/>
+            <ComboBoxItem Background="Yellow" Content="Geel"/>
+            <ComboBoxItem Background="Blue" Content="Blauw"/>
+            <ComboBoxItem Background="White" Content="White"/>
+            <ComboBoxItem Background="Green" Content="green"/>
+        </ComboBox>
+        <ComboBox HorizontalAlignment="Left" Margin="400,26,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Background="Red" Content="Rood"/>
+            <ComboBoxItem Background="Orange" Content="Orange"/>
+            <ComboBoxItem Background="Yellow" Content="Geel"/>
+            <ComboBoxItem Background="Blue" Content="Blauw"/>
+            <ComboBoxItem Background="White" Content="White"/>
+            <ComboBoxItem Background="Green" Content="green"/>
+        </ComboBox>
+        <Button Content="Check kleur" HorizontalAlignment="Left" Margin="558,28,0,0" VerticalAlignment="Top" Width="105"/>
+
+    </Grid>
+</Window>
