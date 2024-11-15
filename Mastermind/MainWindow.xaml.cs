@@ -21,26 +21,51 @@ namespace Mastermind
             InitializeComponent();
         }
 
+        int correctNumberOne;
+        int correctNumberTwo;
+        int correctNumberThree;
+        int correctNumberFour;
+        int actualNumberOne;
+        int actualNumberTwo;
+        int actualNumberThree;
+        int actualNumberFour;
+
         private void mastermindCode_Loaded(object sender, RoutedEventArgs e)
         {
             StringBuilder colorCode = new StringBuilder();
             Random color = new Random();
-            for (int i = 0; i < 4; i++)
+            for (int i = 1; i <= 4; i++)
             {
                 int colorNumber = color.Next(1, 7);
+                if(i == 1)
+                {
+                    correctNumberOne = colorNumber;
+                }
+                if(i == 2)
+                {
+                    correctNumberTwo = colorNumber;
+                }
+                if(i == 3)
+                {
+                    correctNumberThree = colorNumber;
+                }
+                if(i == 4)
+                {
+                    correctNumberFour = colorNumber;
+                }
                 switch (colorNumber)
                 {
                     case 1:
-                        colorCode.Append("Rood, ");
+                        colorCode.Append("Wit, ");
                         break;
                     case 2:
-                        colorCode.Append("Geel, ");
+                        colorCode.Append("Rood, ");
                         break;
                     case 3:
                         colorCode.Append("Orangje, ");
                         break;
                     case 4:
-                        colorCode.Append("Wit, ");
+                        colorCode.Append("Geel, ");
                         break;
                     case 5:
                         colorCode.Append("Groen, ");
@@ -54,6 +79,13 @@ namespace Mastermind
             mastermindCode.Title = colorCode.ToString();
         }
 
+        SolidColorBrush white = new SolidColorBrush(Colors.White);
+        SolidColorBrush red = new SolidColorBrush(Colors.Red);
+        SolidColorBrush orange = new SolidColorBrush(Colors.Orange);
+        SolidColorBrush yellow = new SolidColorBrush(Colors.Yellow);
+        SolidColorBrush green = new SolidColorBrush(Colors.Green);
+        SolidColorBrush blue = new SolidColorBrush(Colors.Blue);
+
         private void ComboBox_Selection(object sender, SelectionChangedEventArgs e)
         {
             if (sender == firstComboBox && firstComboBox.SelectedItem != null)
@@ -61,22 +93,28 @@ namespace Mastermind
                 switch (firstComboBox.SelectedIndex)
                 {
                     case 0:
-                        firstColor.Background = new SolidColorBrush(Colors.White);
+                        firstColor.Background = white;
+                        actualNumberOne = 1;
                         break;
                     case 1:
-                        firstColor.Background = new SolidColorBrush(Colors.Red);
+                        firstColor.Background = red;
+                        actualNumberOne = 2;
                         break;
                     case 2:
-                        firstColor.Background = new SolidColorBrush(Colors.Orange);
+                        firstColor.Background = orange;
+                        actualNumberOne = 3;
                         break;
                     case 3:
-                        firstColor.Background = new SolidColorBrush(Colors.Yellow);
+                        firstColor.Background = yellow;
+                        actualNumberOne = 4;
                         break;
                     case 4:
-                        firstColor.Background = new SolidColorBrush(Colors.Green);
+                        firstColor.Background = green;
+                        actualNumberOne = 5;
                         break;
                     case 5:
-                        firstColor.Background = new SolidColorBrush(Colors.Blue);
+                        firstColor.Background = blue;
+                        actualNumberOne = 6;
                         break;
                 }
             }
@@ -85,22 +123,28 @@ namespace Mastermind
                 switch (secondComboBox.SelectedIndex)
                 {
                     case 0:
-                        secondColor.Background = new SolidColorBrush(Colors.White);
+                        secondColor.Background = white;
+                        actualNumberTwo = 1;
                         break;
                     case 1:
-                        secondColor.Background = new SolidColorBrush(Colors.Red);
+                        secondColor.Background = red;
+                        actualNumberTwo = 2;
                         break;
                     case 2:
-                        secondColor.Background = new SolidColorBrush(Colors.Orange);
+                        secondColor.Background = orange;
+                        actualNumberTwo = 3;
                         break;
                     case 3:
-                        secondColor.Background = new SolidColorBrush(Colors.Yellow);
+                        secondColor.Background = yellow;
+                        actualNumberTwo = 4;
                         break;
                     case 4:
-                        secondColor.Background = new SolidColorBrush(Colors.Green);
+                        secondColor.Background = green;
+                        actualNumberTwo = 5;
                         break;
                     case 5:
-                        secondColor.Background = new SolidColorBrush(Colors.Blue);
+                        secondColor.Background = blue;
+                        actualNumberTwo = 6;
                         break;
                 }
             }
@@ -109,22 +153,28 @@ namespace Mastermind
                 switch (thirdComboBox.SelectedIndex)
                 {
                     case 0:
-                        thirdColor.Background = new SolidColorBrush(Colors.White);
+                        thirdColor.Background = white;
+                        actualNumberThree = 1;
                         break;
                     case 1:
-                        thirdColor.Background = new SolidColorBrush(Colors.Red);
+                        thirdColor.Background = red;
+                        actualNumberThree = 2;
                         break;
                     case 2:
-                        thirdColor.Background = new SolidColorBrush(Colors.Orange);
+                        thirdColor.Background = orange;
+                        actualNumberThree = 3;
                         break;
                     case 3:
-                        thirdColor.Background = new SolidColorBrush(Colors.Yellow);
+                        thirdColor.Background = yellow;
+                        actualNumberThree = 4;
                         break;
                     case 4:
-                        thirdColor.Background = new SolidColorBrush(Colors.Green);
+                        thirdColor.Background = green;
+                        actualNumberThree = 5;
                         break;
                     case 5:
-                        thirdColor.Background = new SolidColorBrush(Colors.Blue);
+                        thirdColor.Background = blue;
+                        actualNumberThree = 6;
                         break;
                 }
             }
@@ -133,25 +183,89 @@ namespace Mastermind
                 switch (fourthComboBox.SelectedIndex)
                 {
                     case 0:
-                        fourthColor.Background = new SolidColorBrush(Colors.White);
+                        fourthColor.Background = white;
+                        actualNumberFour = 1;
                         break;
                     case 1:
-                        fourthColor.Background = new SolidColorBrush(Colors.Red);
+                        fourthColor.Background = red;
+                        actualNumberFour = 2;
                         break;
                     case 2:
-                        fourthColor.Background = new SolidColorBrush(Colors.Orange);
+                        fourthColor.Background = orange;
+                        actualNumberFour = 3;
                         break;
                     case 3:
-                        fourthColor.Background = new SolidColorBrush(Colors.Yellow);
+                        fourthColor.Background = yellow;
+                        actualNumberFour = 4;
                         break;
                     case 4:
-                        fourthColor.Background = new SolidColorBrush(Colors.Green);
+                        fourthColor.Background = green;
+                        actualNumberFour = 5;
                         break;
                     case 5:
-                        fourthColor.Background = new SolidColorBrush(Colors.Blue);
+                        fourthColor.Background = blue;
+                        actualNumberFour = 6;
                         break;
                 }
+
+
             }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+            string correntCode = $"{correctNumberOne}{correctNumberTwo}{correctNumberThree}{correctNumberFour}";
+            string actualCode = $"{actualNumberOne}{actualNumberTwo}{actualNumberThree}{actualNumberFour}";
+            if (correctNumberOne == actualNumberOne)
+            {
+                firstColor.BorderBrush = green;
+            }
+            else if (correntCode.Contains($"{actualNumberOne}"))
+            {
+                firstColor.BorderBrush = yellow;
+            }
+            else
+            {
+                firstColor.BorderBrush = red;
+            }
+            if (correctNumberTwo == actualNumberTwo)
+            {
+                secondColor.BorderBrush = green;
+            }
+            else if (correntCode.Contains($"{actualNumberTwo}"))
+            {
+                secondColor.BorderBrush = yellow;
+            }
+            else
+            {
+                secondColor.BorderBrush = red;
+            }
+            if (correctNumberThree == actualNumberThree)
+            {
+                thirdColor.BorderBrush = green;
+            }
+            else if (correntCode.Contains($"{actualNumberThree}"))
+            {
+                thirdColor.BorderBrush = yellow;
+            }
+            else
+            {
+                thirdColor.BorderBrush = red;
+            }
+            if (correctNumberFour == actualNumberFour)
+            {
+                fourthColor.BorderBrush = green;
+            }
+            else if (correntCode.Contains($"{actualNumberFour}"))
+            {
+                fourthColor.BorderBrush = yellow;
+            }
+            else
+            {
+                fourthColor.BorderBrush = red;
+            }
+
         }
     }
 }

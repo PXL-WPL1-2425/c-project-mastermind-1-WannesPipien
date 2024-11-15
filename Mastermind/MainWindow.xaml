@@ -55,15 +55,15 @@
             <ComboBoxItem Background="Green" Content="Groen"/>
             <ComboBoxItem Background="Blue" Content="Blauw"/>
         </ComboBox>
-        <Label x:Name="firstColor" Panel.ZIndex="-1"
+        <Label x:Name="firstColor" Panel.ZIndex="-1" BorderThickness="5"
                Grid.Row="0" Grid.Column="0"/>
-        <Label x:Name="secondColor" Panel.ZIndex="-1"
+        <Label x:Name="secondColor" Panel.ZIndex="-1" BorderThickness="5"
                Grid.Row="0" Grid.Column="1"/>
-        <Label x:Name="thirdColor" Panel.ZIndex="-1"
+        <Label x:Name="thirdColor" Panel.ZIndex="-1" BorderThickness="5"
                Grid.Row="0" Grid.Column="2"/>
-        <Label x:Name="fourthColor" Panel.ZIndex="-1"
+        <Label x:Name="fourthColor" Panel.ZIndex="-1" BorderThickness="5"
                Grid.Row="0" Grid.Column="3"/>
         <Button VerticalAlignment="Bottom" HorizontalAlignment="Center" Height="50" Width="250" Content="Controleer code"
-                Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"/>
+                Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Click="Button_Click"/>
     </Grid>
 </Window>
