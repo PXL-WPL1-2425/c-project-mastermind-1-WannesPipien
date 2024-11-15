@@ -7,39 +7,27 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ComboBox HorizontalAlignment="Left" Margin="25,26,0,0" VerticalAlignment="Top" Width="120">
-            <ComboBoxItem Background="Red" Content="Rood"/>
-            <ComboBoxItem Background="Orange" Content="Orange"/>
-            <ComboBoxItem Background="Yellow" Content="Geel"/>
-            <ComboBoxItem Background="Blue" Content="Blauw"/>
-            <ComboBoxItem Background="White" Content="White"/>
-            <ComboBoxItem Background="Green" Content="green"/>
-        </ComboBox>
-        <ComboBox HorizontalAlignment="Left" Margin="150,26,0,0" VerticalAlignment="Top" Width="120">
-            <ComboBoxItem Background="Red" Content="Rood"/>
-            <ComboBoxItem Background="Orange" Content="Orange"/>
-            <ComboBoxItem Background="Yellow" Content="Geel"/>
-            <ComboBoxItem Background="Blue" Content="Blauw"/>
-            <ComboBoxItem Background="White" Content="White"/>
-            <ComboBoxItem Background="Green" Content="green"/>
-        </ComboBox>
-            <ComboBox HorizontalAlignment="Left" Margin="275,26,0,0" VerticalAlignment="Top" Width="120">
-            <ComboBoxItem Background="Red" Content="Rood"/>
-            <ComboBoxItem Background="Orange" Content="Orange"/>
-            <ComboBoxItem Background="Yellow" Content="Geel"/>
-            <ComboBoxItem Background="Blue" Content="Blauw"/>
-            <ComboBoxItem Background="White" Content="White"/>
-            <ComboBoxItem Background="Green" Content="green"/>
-        </ComboBox>
-        <ComboBox HorizontalAlignment="Left" Margin="400,26,0,0" VerticalAlignment="Top" Width="120">
-            <ComboBoxItem Background="Red" Content="Rood"/>
-            <ComboBoxItem Background="Orange" Content="Orange"/>
-            <ComboBoxItem Background="Yellow" Content="Geel"/>
-            <ComboBoxItem Background="Blue" Content="Blauw"/>
-            <ComboBoxItem Background="White" Content="White"/>
-            <ComboBoxItem Background="Green" Content="green"/>
-        </ComboBox>
-        <Button Content="Check kleur" HorizontalAlignment="Left" Margin="558,28,0,0" VerticalAlignment="Top" Width="105"/>
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <ComboBox Height="20" VerticalAlignment="Top" 
+                  Grid.Row="0" Grid.Column="0"/>
+        <ComboBox Height="20" VerticalAlignment="Top"
+                  Grid.Row="0" Grid.Column="1"/>
+        <ComboBox Height="20" VerticalAlignment="Top"
+                  Grid.Row="0" Grid.Column="2"/>
+        <ComboBox Height="20" VerticalAlignment="Top"
+                  Grid.Row="0" Grid.Column="3"/>
+        <Button VerticalAlignment="Bottom" HorizontalAlignment="Center" Height="50" Width="250" Content="Controleer code"
+                Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"/>
     </Grid>
 </Window>
