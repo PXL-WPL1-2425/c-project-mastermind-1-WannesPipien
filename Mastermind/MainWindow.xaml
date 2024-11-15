@@ -19,42 +19,50 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <ComboBox Height="20" VerticalAlignment="Top" 
-                  Grid.Row="0" Grid.Column="0">
+        <ComboBox x:Name="firstComboBox" Height="25" VerticalAlignment="Top" 
+                  Grid.Row="0" Grid.Column="0" SelectionChanged="ComboBox_Selection">
             <ComboBoxItem Background="White" Content="Wit"/>
             <ComboBoxItem Background="Red" Content="Rood"/>
             <ComboBoxItem Background="Orange" Content="Orangje"/>
-            <ComboBoxItem Background="Yellow" Content="Geen"/>
+            <ComboBoxItem Background="Yellow" Content="Geel"/>
             <ComboBoxItem Background="Green" Content="Groen"/>
             <ComboBoxItem Background="Blue" Content="Blauw"/>
         </ComboBox>
-        <ComboBox Height="20" VerticalAlignment="Top"
-                  Grid.Row="0" Grid.Column="1">
+        <ComboBox x:Name="secondComboBox" Height="25" VerticalAlignment="Top"
+                  Grid.Row="0" Grid.Column="1" SelectionChanged="ComboBox_Selection">
             <ComboBoxItem Background="White" Content="Wit"/>
             <ComboBoxItem Background="Red" Content="Rood"/>
             <ComboBoxItem Background="Orange" Content="Orangje"/>
-            <ComboBoxItem Background="Yellow" Content="Geen"/>
+            <ComboBoxItem Background="Yellow" Content="Geel"/>
             <ComboBoxItem Background="Green" Content="Groen"/>
             <ComboBoxItem Background="Blue" Content="Blauw"/>
         </ComboBox>
-        <ComboBox Height="20" VerticalAlignment="Top"
-                  Grid.Row="0" Grid.Column="2">
+        <ComboBox x:Name="thirdComboBox"  Height="25" VerticalAlignment="Top"
+                  Grid.Row="0" Grid.Column="2" SelectionChanged="ComboBox_Selection">
             <ComboBoxItem Background="White" Content="Wit"/>
             <ComboBoxItem Background="Red" Content="Rood"/>
             <ComboBoxItem Background="Orange" Content="Orangje"/>
-            <ComboBoxItem Background="Yellow" Content="Geen"/>
+            <ComboBoxItem Background="Yellow" Content="Geel"/>
             <ComboBoxItem Background="Green" Content="Groen"/>
             <ComboBoxItem Background="Blue" Content="Blauw"/>
         </ComboBox>
-        <ComboBox Height="20" VerticalAlignment="Top"
-                  Grid.Row="0" Grid.Column="3">
+        <ComboBox x:Name="fourthComboBox"  Height="25" VerticalAlignment="Top"
+                  Grid.Row="0" Grid.Column="3"  SelectionChanged="ComboBox_Selection">
             <ComboBoxItem Background="White" Content="Wit"/>
             <ComboBoxItem Background="Red" Content="Rood"/>
             <ComboBoxItem Background="Orange" Content="Orangje"/>
-            <ComboBoxItem Background="Yellow" Content="Geen"/>
+            <ComboBoxItem Background="Yellow" Content="Geel"/>
             <ComboBoxItem Background="Green" Content="Groen"/>
             <ComboBoxItem Background="Blue" Content="Blauw"/>
         </ComboBox>
+        <Label x:Name="firstColor" Panel.ZIndex="-1"
+               Grid.Row="0" Grid.Column="0"/>
+        <Label x:Name="secondColor" Panel.ZIndex="-1"
+               Grid.Row="0" Grid.Column="1"/>
+        <Label x:Name="thirdColor" Panel.ZIndex="-1"
+               Grid.Row="0" Grid.Column="2"/>
+        <Label x:Name="fourthColor" Panel.ZIndex="-1"
+               Grid.Row="0" Grid.Column="3"/>
         <Button VerticalAlignment="Bottom" HorizontalAlignment="Center" Height="50" Width="250" Content="Controleer code"
                 Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"/>
     </Grid>
