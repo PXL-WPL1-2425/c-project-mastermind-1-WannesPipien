@@ -20,13 +20,41 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <ComboBox Height="20" VerticalAlignment="Top" 
-                  Grid.Row="0" Grid.Column="0"/>
+                  Grid.Row="0" Grid.Column="0">
+            <ComboBoxItem Background="White" Content="Wit"/>
+            <ComboBoxItem Background="Red" Content="Rood"/>
+            <ComboBoxItem Background="Orange" Content="Orangje"/>
+            <ComboBoxItem Background="Yellow" Content="Geen"/>
+            <ComboBoxItem Background="Green" Content="Groen"/>
+            <ComboBoxItem Background="Blue" Content="Blauw"/>
+        </ComboBox>
         <ComboBox Height="20" VerticalAlignment="Top"
-                  Grid.Row="0" Grid.Column="1"/>
+                  Grid.Row="0" Grid.Column="1">
+            <ComboBoxItem Background="White" Content="Wit"/>
+            <ComboBoxItem Background="Red" Content="Rood"/>
+            <ComboBoxItem Background="Orange" Content="Orangje"/>
+            <ComboBoxItem Background="Yellow" Content="Geen"/>
+            <ComboBoxItem Background="Green" Content="Groen"/>
+            <ComboBoxItem Background="Blue" Content="Blauw"/>
+        </ComboBox>
         <ComboBox Height="20" VerticalAlignment="Top"
-                  Grid.Row="0" Grid.Column="2"/>
+                  Grid.Row="0" Grid.Column="2">
+            <ComboBoxItem Background="White" Content="Wit"/>
+            <ComboBoxItem Background="Red" Content="Rood"/>
+            <ComboBoxItem Background="Orange" Content="Orangje"/>
+            <ComboBoxItem Background="Yellow" Content="Geen"/>
+            <ComboBoxItem Background="Green" Content="Groen"/>
+            <ComboBoxItem Background="Blue" Content="Blauw"/>
+        </ComboBox>
         <ComboBox Height="20" VerticalAlignment="Top"
-                  Grid.Row="0" Grid.Column="3"/>
+                  Grid.Row="0" Grid.Column="3">
+            <ComboBoxItem Background="White" Content="Wit"/>
+            <ComboBoxItem Background="Red" Content="Rood"/>
+            <ComboBoxItem Background="Orange" Content="Orangje"/>
+            <ComboBoxItem Background="Yellow" Content="Geen"/>
+            <ComboBoxItem Background="Green" Content="Groen"/>
+            <ComboBoxItem Background="Blue" Content="Blauw"/>
+        </ComboBox>
         <Button VerticalAlignment="Bottom" HorizontalAlignment="Center" Height="50" Width="250" Content="Controleer code"
                 Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"/>
     </Grid>
