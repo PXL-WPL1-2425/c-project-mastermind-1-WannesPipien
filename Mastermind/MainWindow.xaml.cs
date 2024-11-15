@@ -20,5 +20,38 @@ namespace Mastermind
         {
             InitializeComponent();
         }
+
+        private void mastermindCode_Loaded(object sender, RoutedEventArgs e)
+        {
+            StringBuilder colorCode = new StringBuilder();
+            Random color = new Random();
+            for (int i = 0; i < 4; i++)
+            {
+                int colorNumber = color.Next(1, 6);
+                switch (colorNumber)
+                {
+                    case 1:
+                        colorCode.Append("Rood,");
+                        break;
+                    case 2:
+                        colorCode.Append("Geel,");
+                        break;
+                    case 3:
+                        colorCode.Append("Orangje,");
+                        break;
+                    case 4:
+                        colorCode.Append("Wit,");
+                        break;
+                    case 5:
+                        colorCode.Append("Groen,");
+                        break;
+                    case 6:
+                        colorCode.Append("Blauw,");
+                        break;
+                }
+            }
+            colorCode.Length -= 1;
+            mastermindCode.Title = colorCode.ToString();
+        }
     }
 }
