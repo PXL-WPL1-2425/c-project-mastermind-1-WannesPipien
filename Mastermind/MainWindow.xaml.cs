@@ -227,6 +227,10 @@ namespace Mastermind
             {
                 firstColor.BorderBrush = wheat;
             }
+            else
+            {
+                firstColor.BorderBrush = white;
+            }
             if (correctNumberTwo == actualNumberTwo)
             {
                 secondColor.BorderBrush = darkRed;
@@ -234,6 +238,10 @@ namespace Mastermind
             else if (correntCode.Contains($"{actualNumberTwo}"))
             {
                 secondColor.BorderBrush = wheat;
+            }
+            else
+            {
+                secondColor.BorderBrush = white;
             }
             if (correctNumberThree == actualNumberThree)
             {
@@ -243,6 +251,10 @@ namespace Mastermind
             {
                 thirdColor.BorderBrush = wheat;
             }
+            else
+            {
+                thirdColor.BorderBrush = white;
+            }
             if (correctNumberFour == actualNumberFour)
             {
                 fourthColor.BorderBrush = darkRed;
@@ -250,6 +262,10 @@ namespace Mastermind
             else if (correntCode.Contains($"{actualNumberFour}"))
             {
                 fourthColor.BorderBrush = wheat;
+            }
+            else
+            {
+                fourthColor.BorderBrush = white;
             }
 
         }
