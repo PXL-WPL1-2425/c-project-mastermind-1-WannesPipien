@@ -85,6 +85,8 @@ namespace Mastermind
         SolidColorBrush yellow = new SolidColorBrush(Colors.Yellow);
         SolidColorBrush green = new SolidColorBrush(Colors.Green);
         SolidColorBrush blue = new SolidColorBrush(Colors.Blue);
+        SolidColorBrush darkRed = new SolidColorBrush(Colors.DarkRed);
+        SolidColorBrush wheat = new SolidColorBrush(Colors.Wheat);
 
         private void ComboBox_Selection(object sender, SelectionChangedEventArgs e)
         {
@@ -219,51 +221,35 @@ namespace Mastermind
             string actualCode = $"{actualNumberOne}{actualNumberTwo}{actualNumberThree}{actualNumberFour}";
             if (correctNumberOne == actualNumberOne)
             {
-                firstColor.BorderBrush = green;
+                firstColor.BorderBrush = darkRed;
             }
             else if (correntCode.Contains($"{actualNumberOne}"))
             {
-                firstColor.BorderBrush = yellow;
-            }
-            else
-            {
-                firstColor.BorderBrush = red;
+                firstColor.BorderBrush = wheat;
             }
             if (correctNumberTwo == actualNumberTwo)
             {
-                secondColor.BorderBrush = green;
+                secondColor.BorderBrush = darkRed;
             }
             else if (correntCode.Contains($"{actualNumberTwo}"))
             {
-                secondColor.BorderBrush = yellow;
-            }
-            else
-            {
-                secondColor.BorderBrush = red;
+                secondColor.BorderBrush = wheat;
             }
             if (correctNumberThree == actualNumberThree)
             {
-                thirdColor.BorderBrush = green;
+                thirdColor.BorderBrush = darkRed;
             }
             else if (correntCode.Contains($"{actualNumberThree}"))
             {
-                thirdColor.BorderBrush = yellow;
-            }
-            else
-            {
-                thirdColor.BorderBrush = red;
+                thirdColor.BorderBrush = wheat;
             }
             if (correctNumberFour == actualNumberFour)
             {
-                fourthColor.BorderBrush = green;
+                fourthColor.BorderBrush = darkRed;
             }
             else if (correntCode.Contains($"{actualNumberFour}"))
             {
-                fourthColor.BorderBrush = yellow;
-            }
-            else
-            {
-                fourthColor.BorderBrush = red;
+                fourthColor.BorderBrush = wheat;
             }
 
         }
